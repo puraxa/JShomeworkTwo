@@ -1,11 +1,4 @@
-const restOfDivide = (a,b) => {
-  if(a%b==0){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+const restOfDivide = (a,b) => a % b == 0;
 
 const hundred = 100;
 const fourHundred = 400;
