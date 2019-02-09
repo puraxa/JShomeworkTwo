@@ -4,9 +4,8 @@ const hundred = 100;
 const fourHundred = 400;
 const four = 4;
 
-let year;
+let year = 2336;
 
-year = 2336;
 
 if(restOfDivide(year,fourHundred) || (restOfDivide(year,four) && !restOfDivide(year,hundred))){
   console.log('godina ' + year + ' je prestupna!');
