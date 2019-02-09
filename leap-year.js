@@ -13,21 +13,11 @@ const four = 4;
 
 let year;
 
-year = 2100;
+year = 2336;
 
-if(restOfDivide(year,four)){
-  if(restOfDivide(year,hundred)){
-    if(restOfDivide(year,fourHundred)){
-      console.log('godina '+ year+' je prestupna');
-    }
-    else{
-      console.log('not prestupna');
-    }
-  }
-  else{
-    console.log('godina '+ year+' je prestupna');
-  }
+if(restOfDivide(year,fourHundred) || (restOfDivide(year,four) && !restOfDivide(year,hundred))){
+  console.log('godina ' + year + ' je prestupna!');
 }
 else {
-  console.log('not prestupna');
+  console.log('godina ' + year + 'nije prestupna!');
 }
