@@ -1,10 +1,9 @@
 const checkCapacity = (cap,on,wait) => {
-  if(on+wait-cap>0){
-    return on+wait-cap;
+  const result = on+wait-cap;
+  if(result>0){
+    return result;
   }
-  else {
-    return 0;
-  }
+  return 0;
 }
 
 let maxPassengers;
