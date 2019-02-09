@@ -10,21 +10,16 @@ const finalGrade = (examGrade,numberOfProjects) => {
   }
   return 0;
 }
-const checkParameters = (checkExamGrade,checkNumberOfProjects) => {
-  if(checkExamGrade>=0 && checkExamGrade <=100 && checkNumberOfProjects>=0){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+const checkParameters = (checkExamGrade,checkNumberOfProjects) => checkExamGrade>=0 && checkExamGrade <=100 && checkNumberOfProjects>=0;
 
-let grade;
-let projects;
 
-grade = 93;
-projects = 2;
+let grade = 102;
+let projects = 2;
+
 
 if(checkParameters(grade,projects)){
   console.log('final grade is ' + finalGrade(grade,projects));
+}
+else {
+  console.log('Parameters are not valid ! ');
 }
