@@ -6,13 +6,10 @@ const checkCapacity = (cap,on,wait) => {
   return 0;
 }
 
-let maxPassengers;
-let waitingPassengers;
-let onBoardPassengers;
+let maxPassengers = 150;
+let waitingPassengers = 100;
+let onBoardPassengers = 130;
 
-maxPassengers = 150;
-waitingPassengers = 100;
-onBoardPassengers = 130;
 
 if(checkCapacity(maxPassengers,onBoardPassengers,waitingPassengers)==0){
   console.log('He can fit all passengers');
