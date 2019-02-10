@@ -81,7 +81,7 @@ let endDay = 31;
 let endMonth = 12;
 let endYear = 2016;
 
-if(startYear!=endYear || checkDate(startDay, startMonth, startYear) || checkDate(endDay, endMonth, endYear)){
+if(startYear!=endYear || checkDate(startDay, startMonth, startYear) || checkDate(endDay, endMonth, endYear) || numberOfDays(endDay, endMonth, endYear)-numberOfDays(startDay, startMonth, startYear)<0){
   console.log('Date is not valid!');
 }
 else {
