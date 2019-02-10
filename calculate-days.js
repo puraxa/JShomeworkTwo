@@ -75,15 +75,15 @@ const checkDate = (d, m, y) => {
 }
 
 let startDay = 1;
-let startMonth = 2;
+let startMonth = 1;
 let startYear = 2016;
-let endDay = 29;
-let endMonth = 2;
+let endDay = 31;
+let endMonth = 12;
 let endYear = 2016;
 
 if(startYear!=endYear || checkDate(startDay, startMonth, startYear) || checkDate(endDay, endMonth, endYear)){
   console.log('Date is not valid!');
 }
 else {
-  console.log(numberOfDays(endDay, endMonth, endYear)-numberOfDays(startDay, startMonth, startYear));
+  console.log(numberOfDays(endDay, endMonth, endYear)-numberOfDays(startDay, startMonth, startYear)-1);
 }
