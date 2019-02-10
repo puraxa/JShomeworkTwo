@@ -1,9 +1,5 @@
-const setAlarm = (empl, vac) => {
-  if(empl && !vac){
-    return true;
-  }
-  return false;
-}
+const setAlarm = (empl, vac) => empl && !vac;
+
 
 let employed = true;
 let onVacation = false;
