@@ -49,9 +49,7 @@ const checkDate = (d, m, y) => {
     case 7:
     case 9:
     case 11:
-      if(d>31){
-        return true;
-      }
+        return d>31;
       break;
     case 1:
       if(isLeapYear(y) &&  d > 29){
@@ -65,9 +63,7 @@ const checkDate = (d, m, y) => {
     case 5:
     case 8:
     case 10:
-      if(d>30){
-        return true;
-      }
+      return d>30;
       break;
     default:
       return false;
