@@ -57,7 +57,7 @@ const checkDate = (d, m, y) => {
       if(isLeapYear(y) &&  d > 29){
         return true;
       }
-      if(d > 28){
+      if(!isLeapYear(y) && d > 28){
         return true;
       }
       break;
@@ -75,10 +75,10 @@ const checkDate = (d, m, y) => {
 }
 
 let startDay = 1;
-let startMonth = 1;
+let startMonth = 2;
 let startYear = 2016;
-let endDay = 31;
-let endMonth = 12;
+let endDay = 29;
+let endMonth = 2;
 let endYear = 2016;
 
 if(startYear!=endYear || checkDate(startDay, startMonth, startYear) || checkDate(endDay, endMonth, endYear)){
