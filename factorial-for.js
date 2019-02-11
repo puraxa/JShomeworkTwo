@@ -1,13 +1,16 @@
-let number = 10;
-let result = 1;
+const calcFactorial = (n) => {
+  let result = 1;
+  for(let i = 1; i <= number; i++){
+    result*=i;
+  }
+  return result;
+}
+
+let number = 0;
 
 if(number < 0){
   console.log('Negativni brojevi nemaju faktorijel!');
 }
 else {
-for(let i = 1; i <= number; i++){
-  result*=i;
-}
-
-console.log(result);
+  console.log(calcFactorial(number));
 }
