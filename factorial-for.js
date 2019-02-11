@@ -1,7 +1,7 @@
 const calcFactorial = (n) => {
   let result = 1;
-  for(let i = 1; i <= number; i++){
-    result*=i;
+  for(let i = 2; i <= number; i++){
+    result *= i;
   }
   return result;
 }

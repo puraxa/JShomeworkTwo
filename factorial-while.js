@@ -1,13 +1,13 @@
 const calcFactorial = (n) => {
   let result = 1;
-  let i=1;
+  let i = 2;
   while(i<=number){
-    result*=i++;
+    result *= i++;
   }
   return result;
 }
 
-let number = 0;
+let number = 5;
 
 if(number < 0){
   console.log('Negativni brojevi nemaju faktorijel!');
