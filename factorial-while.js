@@ -1,7 +1,7 @@
 const calcFactorial = (n) => {
   let result = 1;
   let i = 2;
-  while(i<=number){
+  while(i<=n){
     result *= i++;
   }
   return result;
